@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>منتجاتنا - بقالة  جازع طريق</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7x1z5l5e5c5e5e5e5e5e5e5e5e5e5e5e" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7x1z5l5e5c5e5e5e5e5e5e5e5e5e5e5e" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0dda626a, #26cde3);
+            color: #333;
+            font-family: 'Cairo', sans-serif;
+            padding: 30px;
+            min-height: 100vh;
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-image: url('imges/خخخخخ.jpg');
+            background-size: cover;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #388e3c;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .product-box {
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 16px rgba(4, 248, 110, 0.947);
+        }
+
+        .product-box img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-box h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #2e7d32;
+        }
+
+        .product-box p {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #388e3c;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>منتجاتنا</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="abut.html">اتصل بنا</a></li>
+                <li><a href="tazan.html">من نحن</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="searchBox" placeholder="أدخل اسم المنتج" onkeyup="searchProduct()" />
+        <div class="product-grid">
+            <div class="product-box">
+                <img src="سمن-Photoroom.png" alt="موز">
+                <h3>سمن القمرية</h3>
+                <p>بطعمة الغني وجودته العاليه مثالي لطهي</p>
+            </div>
+            <div class="product-box">
+                <img src="كريستال-Photoroom.png" alt="موز">
+                <h3>صابون كريستال</h3>
+                <p>بتركيبه فعالة يمنحك النظافة عميقه
+                </p>
+            </div>
+            <div class="product-box">
+                <img src="زبادي-Photoroom.png" alt="موز">
+                <h3>زبادي </h3>
+                <p>زبادي يماني عشاني وعشانك </p>
+            </div>
+            <div class="product-box">
+                <img src="الرعوي-Photoroom.png" alt="موز">
+                <h3>حقين  الرعوي</h3>
+                <p>لاتلف ولا تدور حقين الرعوي لدينا موجود</p>
+            </div>
+            <div class="product-box">
+                <img src="بقري-Photoroom.png" alt="موز">
+                <h3>حليب بقري</h3>
+                <p>طبيعي 100% وغني بلكالسيوم والبروتينات الضرورية للجسم</p>
+            </div>
+            <div class="product-box">
+                <img src="الرجوي-Photoroom.png" alt="موز">
+                <h3>حلبة الرجوي</h3>
+                <p>الأصلي درجه اولى</p>
+            </div>
+            <div class="product-box">
+                <img src="كابوس-Photoroom.png" alt="موز">
+                <h3>شاي كبوس</h3>
+                <p>وزن 250 جرام</p>
+            </div>
+            <div class="product-box">
+                <img src="مغذي-Photoroom.png" alt="موز">
+                <h3>ويفر مغذي</h3>
+                <p>يتميز بطعمة الذيذ وقيمته العالية</p>
+            </div>
+            <div class="product-box">
+                <img src="xxxxxxxxxxxx-Photoroom.png" alt="موز">
+                <h3>راني مانجو</h3>
+                <p> عصائر راني طازجة بنكهات متعدده</p>
+            </div>
+            <div class="product-box">
+                <img src="ppppppp-Photoroom.png" alt="تفاح">
+                <h3>راني مشكل</h3>
+                <p>عصير فواكة مشكله طازجة</p>
+            </div>
+            <div class="product-box">
+                <img src="كوكتيل.png" alt="برتقال">
+                <h3>راني كوكتيل</h3>
+                <p>كوكتيل عصير طبيعي</p>
+            </div>
+            <div class="product-box">
+                <img src="سمايلي-Photoroom.png" alt="عصير طبيعي">
+                <h3>بسكويت سمايلي</h3>
+                <p>من أجود البسكويت في السوق</p>
+            </div>
+            <div class="product-box">
+                <img src="ماري-Photoroom.png" alt="عصير طبيعي">
+                <h3>بسكويت ماري</h3>
+                <p>بسكويت ماري هش وخفيف بطعمه الذيذ مع الشاي</p>
+            </div>
+            <div class="product-box">
+                <img src="ابو ولد-Photoroom.png" alt="عصير طبيعي">
+                <h3>أبو ولد</h3>
+                <p>بسكويت أبو ولد بدونه لن يحلى البلد</p>
+            </div>
+            <div class="product-box">
+                <img src="كيك-Photoroom.png" alt="عصير طبيعي">
+                <h3>Taza كيك</h3>
+                <p>  طري ولذيذ  بطعم الشكولاتة  taza كيك </p>
+            </div>
+            <div class="product-box">
+                <img src="ممتاز-Photoroom.png" alt="عصير طبيعي">
+                <h3>حليب ممتاز</h3>
+                <p>حليب شاي مركز بجودة عاليه يعطي مذاق كريمي</p>
+            </div>
+            <div class="product-box">
+                <img src="ديلسي-Photoroom.png" alt="عصير طبيعي">
+                <h3>ديلسي </h3>
+                <p>كنداء بنكه الرمان</p>
+            </div>
+            <div class="product-box">
+                <img src="ادكو-Photoroom.png" alt="عصير طبيعي">
+                <h3>أدكو </h3>
+                <p>كنداء بنكهات متعددة</p>
+            </div>
+            <div class="product-box">
+                <img src="ثلج-Photoroom.png" alt="عصير طبيعي">
+                <h3>ثلج</h3>
+                <p>خذ اي قطعه بلمبلغ الي تريده</p>
+            </div>
+            <div class="product-box">
+                <img src="بازلاء-Photoroom.png" alt="عصير طبيعي">
+                <h3>بازيلاء</h3>
+                <p>بازيلاء خضراء سريعة التحضير</p>
+            </div>
+            <div class="product-box">
+                <img src="فول-Photoroom.png" alt="عصير طبيعي">
+                <h3>فول مدمس</h3>
+                <p>فول درجة اولى</p>
+            </div>
+            <div class="product-box">
+                <img src="فاصولياء-Photoroom.png" alt="عصير طبيعي">
+                <h3>فاصولياء الهناء</h3>
+                <p>فاصولياء مطبوخه جاهزة للأكل</p>
+            </div>
+            <!-- تقدر تضيف منتجات أكثر بنفس الطريقة -->
+        </div>
+        <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>إرسال الطلب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('mosheer.jpg');
+            background-size: cover;
+            background-repeat:no-repeat;
+        }
+        .order-box {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,1.1);
+            border: 1px solid #ccc;
+            background-image: url('mosheer.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 1px 8px 24px rgb(31, 163, 117);
+            text-align: center;
+        }
+        .order-box h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .order-box p {
+            color: #e11414;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .order-box textarea {
+            width: 100%;
+            height: 150px;
+            padding: 1px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            resize: none;
+            margin-bottom: 20px;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #25d366;
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
+        }
+#searchBox {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #0af458;
+  border-radius: 5px;
+}
+.product-item {
+  padding:10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: rgb(9, 186, 32);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    
+}
+
+nav a:hover {
+    color: #050604;
+    background: linear-gradient(135deg, #ffffff, #3a974b);
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(137, 53, 53, 0.2);
+    text-shadow: 0 0 5px #cfc9c9, 0 0 10px #f8f6f6, 0 0 15px #1f7a06, 0 0 20px #7ef605;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+</style>
+    </style>
+
+</head>
+<body>
+    <div class="order-box">
+        <h2>إرسال طلبك</h2>
+        <p>يرجى كتابة طلبك في المساحة أدناه:</p>
+        <textarea id="order-text" placeholder="                             اكتب طلبك هنا"></textarea>
+        <a href="#" class="whatsapp-button" onclick="sendWhatsApp()">إرسال عبر واتساب</a>
+        <footer style="text-align: center; padding: 10px;">
+            &copy; 2025 تم برمجة هذا الموقع بواسطة ذويزن_محرم
+        </footer>
+        <script>
+            function sendWhatsApp() {
+                var orderText = document.getElementById('order-text').value;
+                var phoneNumber = '967717802739'; // رقم الهاتف
+                var message = encodeURIComponent(orderText);
+                var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + message;
+                window.open(whatsappUrl, '_blank');
+            }
+
+            function searchProduct() {
+                var input, filter, productGrid, productBoxes, i, txtValue;
+                input = document.getElementById('searchBox');
+                filter = input.value.toUpperCase();
+                productGrid = document.querySelector('.product-grid');
+                productBoxes = productGrid.getElementsByClassName('product-box');
+
+                for (i = 0; i < productBoxes.length; i++) {
+                    txtValue = productBoxes[i].textContent || productBoxes[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        productBoxes[i].style.display = "";
+                    } else {
+                        productBoxes[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+</body>
+</html>
+</body>
+</html>
